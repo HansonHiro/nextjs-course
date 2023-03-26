@@ -13,7 +13,9 @@ function EventsSearch(props) {
     const selectedMonth = monthInputRef.current.value;
 
     props.onSearch(selectedYear, selectedMonth);
+    console.log("test button");
   }
+
   return (
     <form className={classes.form} onSubmit={submitHandler}>
       <div className={classes.controls}>
